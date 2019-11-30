@@ -44,18 +44,27 @@ https://t.me/blockmatic
 - How to decide scopes
 - Easier way to do table migrations
 
-https://developers.blockmatic.io/smart-contracts
-
 ## Getting Started
 
-- install eosio.cdt
-- ...
+- install eosio/telos https://github.com/Telos-Foundation/telos  
+- install eosio.cdt https://eosio.github.io/eosio.cdt/latest/index 
 
 ## Build and Deploy
 
-`cmake . && make`  
+- cd to `build/` directory
+- run the command `cmake ..`
+- run the command `make`
+ 
+After build 
+ 
+- The built smart contract is under the 'teloscontracts' directory in the 'build' directory
+- You can then do a 'set contract' action with 'cleos' and point in to the './build/teloscontracts' directory
 
-...
+Additions to CMake should be done to the CMakeLists.txt in the './src' directory and not in the top level CMakeLists.txt
+
+## eosio-init
+
+This project was boostrapped using `eosio-init` utility from the EOSIO Contract Development Toolkit.
 
 ## Contributing
 
@@ -69,6 +78,7 @@ Read the [contributing guidelines](https://developers.blockmatic.io) for details
   <tr>
     <td align="center"><a href="https://gaboesquivel.com"><img src="https://avatars0.githubusercontent.com/u/391270?v=4" width="100px;" alt="Gabo Esquivel"/><br /><sub><b>Gabo Esquivel</b></sub></a><br /><a href="#ideas-gaboesquivel" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/telosdreamstack/telos-contracts-starter/commits?author=gaboesquivel" title="Code">💻</a></td>
     <td align="center"><a href="http://lucca65.github.io"><img src="https://avatars1.githubusercontent.com/u/1082127?v=4" width="100px;" alt="Julien Lucca"/><br /><sub><b>Julien Lucca</b></sub></a><br /><a href="#ideas-lucca65" title="Ideas, Planning, & Feedback">🤔</a></td>
+    <td align="center"><a href="http://CryptoLions.io"><img src="https://avatars2.githubusercontent.com/u/37701692?v=4" width="100px;" alt="Bohdan Cryptolions"/><br /><sub><b>Bohdan Cryptolions</b></sub></a><br /><a href="#ideas-ansigroup" title="Ideas, Planning, & Feedback">🤔</a></td>
   </tr>
 </table>
 

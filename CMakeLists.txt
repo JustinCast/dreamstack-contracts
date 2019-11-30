@@ -1,5 +1,3 @@
-cmake_minimum_required(VERSION 3.13)
-
 include(ExternalProject)
 # if no cdt root is given use default path
 if(EOSIO_CDT_ROOT STREQUAL "" OR NOT EOSIO_CDT_ROOT)
@@ -7,9 +5,9 @@ if(EOSIO_CDT_ROOT STREQUAL "" OR NOT EOSIO_CDT_ROOT)
 endif()
 
 ExternalProject_Add(
-   demodemodemo
-   SOURCE_DIR ${CMAKE_SOURCE_DIR}/contracts
-   BINARY_DIR ${CMAKE_BINARY_DIR}/build
+   teloscontracts_project
+   SOURCE_DIR ${CMAKE_SOURCE_DIR}/src
+   BINARY_DIR ${CMAKE_BINARY_DIR}/teloscontracts
    CMAKE_ARGS -DCMAKE_TOOLCHAIN_FILE=${EOSIO_CDT_ROOT}/lib/cmake/eosio.cdt/EosioWasmToolchain.cmake
    UPDATE_COMMAND ""
    PATCH_COMMAND ""
