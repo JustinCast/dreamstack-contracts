@@ -30,19 +30,20 @@ https://t.me/blockmatic
 
 ## Features
 
-- Build with cmake.
-- Include headers.
-- Ricardian contract tooling.
-- Coding guidelines & best practices documention.
+- [x] Coding guidelines & best practices documention.
+- [x] Build with cmake, Include headers. 
+- [x] Ricardian contract tooling.
+- [ ] Compilation and deployment scripts.
+- ...
 
-## Best Practices
+## Best Practices ( wip )
 
-- How to react to receiving tokens to execute an action (payable actions)
-- How to have a reliable id index in eosio
-- When use blockchain storage when use offchain even with blockchain verification 
-- Best way to CRUD
-- How to decide scopes
-- Easier way to do table migrations
+- How to react to receiving tokens to execute an action (payable actions).
+- How to have a reliable id index in eosio.
+- When use blockchain storage when use offchain even with blockchain verification.
+- Best way to CRUD.
+- How to decide scopes.
+- Easier way to do table migrations.
 
 ## Getting Started
 
