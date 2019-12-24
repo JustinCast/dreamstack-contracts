@@ -15,9 +15,9 @@
 	</a>
 </p>
 
-# TELOS Smart Contracts Starter
+# DreamStack Smart Contracts Starter
 
-Jumpstart smart contract development on TELOS following best practices.
+Jumpstart smart contract development on EOSIO following best practices.
 
 ## TELOS
 
